@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${URI}
+          username: ${USERNAME}
+          password: ${PWD}
+          default-label: master
+
+encrypt:
+  key: ${KEY}
